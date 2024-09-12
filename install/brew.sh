@@ -41,6 +41,7 @@ brew install --cask --appdir="/Applications" tableplus
 brew install --cask --appdir="/Applications" postman
 brew install --cask --appdir="/Applications" the-unarchiver
 brew install --cask --appdir="/Applications" whatsapp
+brew install --cask --appdir="/Applications" hyper
 brew install --cask --appdir="/Applications" jetbrains-toolbox
 brew install --cask --appdir="/Applications" telegram
 brew install --cask --appdir="/Applications" appcleaner
