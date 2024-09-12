@@ -45,6 +45,7 @@ brew install --cask --appdir="/Applications" hyper
 brew install --cask --appdir="/Applications" jetbrains-toolbox
 brew install --cask --appdir="/Applications" telegram
 brew install --cask --appdir="/Applications" appcleaner
+brew install --cask --appdir="/Applications" microsoft-office
 
 # Wait a bit before moving on...
 sleep 1
