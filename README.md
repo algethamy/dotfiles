@@ -22,7 +22,7 @@ On fresh installation of MacOS:
 
 Clone and install dotfiles:
 	
-    git clone https://github.com/mihaliak/dotfiles.git ~/dotfiles
+    git clone https://github.com/algethamy/dotfiles.git ~/dotfiles
     cd ~/dotfiles
     git checkout v3.14
     cd ~/dotfiles/install
