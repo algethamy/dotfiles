@@ -1,4 +1,4 @@
-COMPUTER_NAME="nipid"
+COMPUTER_NAME="ncpd"
 
 osascript -e 'tell application "System Preferences" to quit'
 
@@ -9,10 +9,10 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "$COMPUTER_NAME"
-sudo scutil --set HostName "$COMPUTER_NAME"
-sudo scutil --set LocalHostName "$COMPUTER_NAME"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$COMPUTER_NAME"
+sudo scutil --set ComputerName "algethamy-ncpd"
+sudo scutil --set HostName "algethamy-ncpd"
+sudo scutil --set LocalHostName "algethamy-ncpd"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "algethamy-ncpd"
 
 # Disable the “Are you sure you want to open this application?” dialog
 defaults write com.apple.LaunchServices LSQuarantine -bool false
@@ -110,6 +110,7 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
 # Set format of date & hours in menu bar
 defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM  HH:mm"
+defaults write NSGlobalDomain AppleLocale en_SA@calendar=gregorian
 
 for app in "Address Book" "Calendar" "Contacts" "Dock" "Finder" "Mail" "Safari" "SystemUIServer" "iCal"; do
   killall "${app}" &> /dev/null
