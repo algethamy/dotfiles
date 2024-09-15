@@ -22,7 +22,8 @@ brew install imagemagick
 brew install pkg-config
 brew install autoconf
 brew install pkg-config
-
+brew install mysql
+brew services start mysql
 
 # Wait a bit before moving on...
 sleep 1
@@ -45,7 +46,9 @@ brew install --cask --appdir="/Applications" hyper
 brew install --cask --appdir="/Applications" jetbrains-toolbox
 brew install --cask --appdir="/Applications" telegram
 brew install --cask --appdir="/Applications" appcleaner
+brew install --cask --appdir="/Applications" chatgpt
 brew install --cask --appdir="/Applications" microsoft-office
+brew install --cask --appdir="/Applications" microsoft-teams
 
 # Wait a bit before moving on...
 sleep 1
